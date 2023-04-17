@@ -26,7 +26,6 @@
             width:200%;
             display:flex;
             flex-direction: column;
-            font-family: 'Roboto', sans-serif;
             text-shadow: 0px 0px 40px #023F60;
             padding:0;
             margin:0;
@@ -51,9 +50,12 @@
 
         }
 
-        .header-right img{
-            object-fit:cover;
-            display:block;
+        #gradient{
+            position:absolute;
+            width:50%;
+            height:100vh;
+            margin-left: 50%;
+           background: linear-gradient(0deg, rgba(1,47,81,1) 0%, rgba(1,47,81,0) 50%);
         }
 
 
@@ -63,8 +65,9 @@
             text-align:center;
             font-size:20vh;
             line-height:20vh;
-            font-family:'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color:white;
+            z-index:15;
         }
 
 
@@ -72,16 +75,12 @@
         #header-text{
             display:block;
             position:absolute;
-            top:60%;
+            margin-left:50%;
+            padding:3vw;
             bottom:0;
-
-
-            width:100%;
-            min-width:100%;
-            min-height:50%;
-            
+            width:50%;
+            z-index:15;
             font-family: 'Roboto', sans-serif;
-
         }
 
 
@@ -109,7 +108,7 @@
 
         #col2{
         position:fixed;
-        bottom:-100%;
+        bottom:-100vh;
         right:0;
         left:50%;
         width:50%;
@@ -122,14 +121,14 @@
             flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding:5vw;
+        padding:15vw 5vw;
         min-height:40vw;
         } 
 
 
         img{
             display:block;
-            width:100.1%;
+            width:100.2%;
             object-fit:cover;
 
         }
@@ -137,13 +136,21 @@
 
         p{
             font-size: 2vw;
-            color:white;
+            color:rgb(255, 255, 255);
             font-family:'Lora', serif;
             text-indent: 2em;
             line-height: 1.5em;
-
             text-align:justify;
+            padding:1.5vw;
+        }
 
+        #header-text p{
+            font-family: 'Roboto', sans-serif;
+            padding:0;
+        }
+
+        .text-container{
+            width:100.2%;
         }
 
         /*column1 text divs*/
@@ -155,125 +162,171 @@
 
         #text-block-3{
             background-color:#935D45;
+            padding-top:10vw;
+            padding-bottom:10vw;
         }
 
         #text-block-5{
             background-color:#A1491D;
+            padding-bottom:23vw;
         }
 
         #text-block-7{
             background-color:#23321A;
+            padding-top:20vw;
+            padding-bottom:25vw;
         }
 
         #text-block-9{
-            background-color:#7D7A24;
+            background-color:#6d6c2d;
+            padding-top:20vw;
         }
 
         #text-block-11{
             background-color:#721A06;
-        }
-
-        #text-block-12{
-            background-color:#946C4E;
+            padding-top:5vw;
+            padding-bottom:5vw;
         }
 
         #text-block-13{
-            background-color:#585673;
+            background-color:#946C4E;
+            padding-top:10vw;
+            padding-bottom:10vw;
         }
 
         #text-block-15{
-            background-color:#793D2C;
+            background-color:#585673;
+           
+            padding-bottom:10vw;
+            
         }
 
         #text-block-17{
-            background-color:#375550;
+            background-color:#793D2C;
+            padding-top:20vw;
+            padding-bottom:20vw;
         }
 
         #text-block-19{
-            background-color:#6D6349;
+            background-color:#375550;
+            padding-top:20vw;
+            padding-bottom:20vw;
         }
 
         #text-block-21{
-            background-color:#363F17;
+            background-color:#6D6349;
+            padding-top:5vw;
+            padding-bottom:5vw;
         }
 
         #text-block-23{
-            background-color:#827454;
+            background-color:#363F17;
         }
 
         #text-block-25{
-            background-color:#342F4F;
+            background-color:#827454;
+            padding-top:10vw;
+            padding-bottom:10vw;
         }
 
         #text-block-27{
-            background-color:#AFA389;
+            background-color:#357498;
+            padding-top:20vw;
+            padding-bottom:20vw;
         }
 
         #text-block-29{
-            
+            background-color:#AFA389;
+            width:200%;
+            min-height:2vh;
+            height:10vh;
+            margin:0;
         }
+
 
         /* column2 text divs */
 
 
         #text-block-2{
             background-color:#405F7B;
+            padding-bottom:20vw;
         }
 
         #text-block-4{
             background-color:#3F2838;
+            
         }
 
         #text-block-6{
             background-color:#434146;
+            padding-top:20vw;
+            padding-bottom:30vw;
         }
 
         #text-block-8{
-            background-color:#534237;
+            background-color:#76382E;
+            padding-top:20vw;
+            padding-bottom:25vw;
         }
 
         #text-block-10{
             background-color:#2A5B71;
+            padding-bottom:30vw;
         }
 
         #text-block-12{
             background-color:#CE9F3E;
+            padding-top:5vw;
+            padding-bottom:5vw;
         }
 
         #text-block-14{
             background-color:#4C7272;
+            padding-top:20vw;
         }
 
         #text-block-16{
             background-color:#012F51;
+            padding-bottom:20vw;
         }
 
         #text-block-18{
             background-color:#474D63;
+            padding-top:20vw;
+            padding-bottom:20vw;
         }
 
         #text-block-20{
-            background-color:#06220B;
+            background-color:#1f3222;
         }
 
         #text-block-22{
             background-color:#6D564B;
+            padding-bottom:20vw;
         }
 
         #text-block-24{
             background-color:#1E1710;
+            padding-top:5vw;
+            padding-bottom:5vw;
         }
 
         #text-block-26{
             background-color:#3D3B3E;
+            padding-bottom:20vw;
         }
 
         #text-block-28{
-            
-        
+            background-color:#342F4F;
+            padding-top:20vw;
+            padding-bottom:20vw;
         }
 
         #mesa{
             width:200%;
+            
+        }
+
+        .scroll-up{
             
         }
